@@ -1,13 +1,9 @@
-body {
-  background-color: #eeeeee;
-
-  font-family: "Roboto", serif;
-}
 #container {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .row {
@@ -15,6 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -24,6 +21,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 .card_header {
@@ -52,4 +50,12 @@ img {
 
 .hidden {
   visibility: hidden;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
 }
