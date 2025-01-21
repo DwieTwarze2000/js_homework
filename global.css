@@ -1,6 +1,6 @@
 body {
   background-color: #eeeeee;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
 }
 
 h1 {
@@ -12,9 +12,13 @@ h1 {
 
 footer {
   text-align: center;
-  margin-top: 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
   font-size: 1.2rem;
+  background-color: #eeeeee;
+}
+
+.spacer {
+  margin-bottom: 50px;
 }

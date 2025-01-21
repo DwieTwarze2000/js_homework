@@ -11,11 +11,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="calculator.css" />
   </head>
   <body>
     <h1>Aplikacje internetowe - Kalkulator</h1>
+    <div class="calculator">
+      <form name="calcForm">
+        <div class="input-row">
+          <label for="a">A:</label>
+          <input type="text" name="a" id="a" />
+        </div>
+        <div class="input-row">
+          <label for="b">B:</label>
+          <input type="text" name="b" id="b" />
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="add()">+</button>
+          <button type="button" onclick="subtract()">-</button>
+          <button type="button" onclick="multiply()">*</button>
+          <button type="button" onclick="divide()">/</button>
+          <button type="button" onclick="factorial()">a!</button>
+          <button type="button" onclick="power()">a^b</button>
+          <button type="button" onclick="powerOf2()">2^a</button>
+          <button type="button" onclick="sqrt()">√a</button>
+          <button type="button" onclick="sinus()">sin(a)</button>
+          <button type="button" onclick="cosinus()">cos(a)</button>
+          <button type="button" onclick="logarithm()">
+            log<sub>b</sub>(a)
+          </button>
+        </div>
+        <div class="result">
+          <label for="result">Wynik obliczeń:</label>
+          <input type="text" id="result" name="result" readonly />
+        </div>
+      </form>
+    </div>
     <footer>
       <p>Pracę wykonał: <strong>Paweł Bińkowski</strong></p>
     </footer>
+    <script src="calculator.js"></script>
   </body>
 </html>
