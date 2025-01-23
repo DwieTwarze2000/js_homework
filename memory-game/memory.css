@@ -1,0 +1,30 @@
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: url('default.jpg') no-repeat center center;
+  background-size: cover;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.card.flipped {
+  background: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.card.flipped img {
+  display: block;
+}
