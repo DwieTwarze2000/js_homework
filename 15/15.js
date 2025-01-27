@@ -41,7 +41,7 @@ function shuffleTiles() {
 }
 
 function updateMoveCounter() {
-  moveCounterElement.textContent = `Moves: ${moveCounter}`
+  moveCounterElement.textContent = `Liczba ruchów: ${moveCounter}`
 }
 
 let num = 4

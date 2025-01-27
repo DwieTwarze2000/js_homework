@@ -1,0 +1,27 @@
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 5px;
+  justify-content: center;
+}
+
+#game-container div {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#game-container div:hover {
+  background-color: #f0f0f0;
+}
+
+div img {
+  width: 150px;
+  height: 150px;
+}
