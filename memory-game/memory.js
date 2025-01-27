@@ -1,4 +1,21 @@
-let images = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg']
+let images = [
+  'img1.jpg',
+  'img2.jpg',
+  'img3.jpg',
+  'img4.jpg',
+  'img5.jpg',
+  'img6.jpg',
+  'img7.jpg',
+  'img8.jpg',
+  'img1.jpg',
+  'img2.jpg',
+  'img3.jpg',
+  'img4.jpg',
+  'img5.jpg',
+  'img6.jpg',
+  'img7.jpg',
+  'img8.jpg',
+]
 let shuffledImages = []
 let flippedCards = []
 let matchedPairs = 0
@@ -25,7 +42,7 @@ function play(card) {
     flippedCards.push(card)
 
     if (flippedCards.length === 2) {
-      checkMatch()
+      setTimeout(() => checkMatch())
     }
   }
 }
@@ -41,7 +58,7 @@ function checkMatch() {
     card2.style.visibility = 'hidden'
     flippedCards = []
 
-    if (matchedPairs === 4) {
+    if (matchedPairs === 8) {
       alert('You win!')
       startGame()
     }
